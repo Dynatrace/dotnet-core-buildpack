@@ -9,6 +9,8 @@ import (
 	"strings"
 )
 
+const SENTINEL = "sentinel"
+
 type Stager struct {
 	buildDir   string
 	cacheDir   string
@@ -26,11 +28,11 @@ func NewStager(args []string, logger *Logger, manifest *Manifest) *Stager {
 	depsIdx := ""
 	profileDir := ""
 
-	sentPath := filepath.Join(buildDir, ".cloudfoundry", "sentinal")
-	sentinal, err := FileExists(sentPath)
+	sentinalPath := filepath.Join(string(filepath.Separator), "home", "vcap", "app", ".cloudfoundry", SENTINEL)
+	exists, err := FileExists(sentinalPath)
 	if err != nil {
-		logger.Error("Problem resolving buildDir : %v", err)
-	} else if sentinal {
+		logger.Error("Problem resolving V3 sentinal file: %v", err)
+	} else if exists {
 		panic("ERROR: You are running a V2 buildpack after a V3 buildpack. This is unsupported.")
 	}
 

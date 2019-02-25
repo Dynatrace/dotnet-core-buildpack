@@ -3,9 +3,9 @@ module github.com/cloudfoundry/dotnet-core-buildpack
 require (
 	cloud.google.com/go v0.34.0 // indirect
 	code.cloudfoundry.org/bytefmt v0.0.0-20180906201452-2aa6f33b730c // indirect
-	github.com/Dynatrace/libbuildpack-dynatrace v1.1.0
+	github.com/Dynatrace/libbuildpack-dynatrace v1.2.0
 	github.com/blang/semver v3.5.1+incompatible
-	github.com/cloudfoundry/libbuildpack v0.0.0-20190110200243-27d5cb5e3702
+	github.com/cloudfoundry/libbuildpack v0.0.0-20190222173858-990e66f68afd
 	github.com/go-ini/ini v1.41.0
 	github.com/golang/mock v1.2.0
 	github.com/gravityblast/go-jsmin v0.0.0-20141027113318-a32d741b3595
@@ -22,8 +22,8 @@ require (
 	go4.org v0.0.0-20181109185143-00e24f1b2599 // indirect
 	golang.org/x/build v0.0.0-20190108163226-9730d8b65705 // indirect
 	golang.org/x/crypto v0.0.0-20190103213133-ff983b9c42bc // indirect
-	golang.org/x/net v0.0.0-20190108155000-395948e2f546 // indirect
-	golang.org/x/sys v0.0.0-20190108104531-7fbe1cd0fcc2 // indirect
+	golang.org/x/net v0.0.0-20190225153610-fe579d43d832 // indirect
+	golang.org/x/sys v0.0.0-20190225065934-cc5685c2db12 // indirect
 	golang.org/x/tools v0.0.0-20190108193835-e8d59ebc6619 // indirect
 	google.golang.org/genproto v0.0.0-20190108161440-ae2f86662275 // indirect
 	gopkg.in/ini.v1 v1.41.0 // indirect
